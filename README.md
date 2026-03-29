@@ -18,6 +18,7 @@ Expense reimbursement system with multi-level approvals and smart rules.
 ## 👥 Team
 - Aditya Dalvi (Team Leader)
 - Arjun Sankpal
+- Shaunak Dandavate
 
 ## 📌 Hackathon
 Odoo x VIT Pune Hackathon 26
