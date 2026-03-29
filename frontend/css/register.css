@@ -1,0 +1,23 @@
+.step-pill {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 2.2rem;
+    height: 2.2rem;
+    border-radius: 50%;
+    background: #dee2e6;
+    font-weight: 700;
+}
+
+.step-pill.active {
+    background: var(--primary);
+    color: white;
+}
+
+.step-panel {
+    display: none;
+}
+
+.step-panel.active {
+    display: block;
+}

@@ -1,0 +1,107 @@
+:root {
+    --primary: #0d6efd;
+    --secondary: #6c757d;
+    --success: #198754;
+    --danger: #dc3545;
+    --warning: #ffc107;
+    --dark: #212529;
+    --light-bg: #f8f9fa;
+    --card-radius: 1rem;
+}
+
+body {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--light-bg);
+}
+
+.hover-card {
+    transition:
+        transform 0.2s ease,
+        box-shadow 0.2s ease;
+    border-radius: var(--card-radius);
+}
+
+.hover-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 0.75rem 1.5rem rgba(0, 0, 0, 0.08);
+}
+
+.app-shell {
+    min-height: 100vh;
+    display: flex;
+}
+
+.sidebar {
+    width: 260px;
+    background: #fff;
+    border-right: 1px solid #e9ecef;
+    padding: 1.25rem;
+}
+
+.sidebar .nav-link {
+    color: #333;
+    border-radius: 0.75rem;
+    margin-bottom: 0.35rem;
+}
+
+.sidebar .nav-link.active,
+.sidebar .nav-link:hover {
+    background: rgba(13, 110, 253, 0.08);
+    color: var(--primary);
+}
+
+.content-area {
+    flex: 1;
+    padding: 1.5rem;
+}
+
+.stat-card {
+    border: 0;
+    border-radius: 1rem;
+    box-shadow: 0 0.35rem 1rem rgba(0, 0, 0, 0.06);
+}
+
+.status-badge {
+    padding: 0.4rem 0.65rem;
+    border-radius: 999px;
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
+.status-pending {
+    background: #fff3cd;
+    color: #856404;
+}
+
+.status-approved {
+    background: #d1e7dd;
+    color: #0f5132;
+}
+
+.status-rejected {
+    background: #f8d7da;
+    color: #842029;
+}
+
+.table thead th {
+    white-space: nowrap;
+}
+
+.section-card {
+    border: 0;
+    border-radius: 1rem;
+    box-shadow: 0 0.35rem 1rem rgba(0, 0, 0, 0.06);
+}
+
+.receipt-preview {
+    border: 2px dashed #ced4da;
+    border-radius: 1rem;
+    padding: 1rem;
+    text-align: center;
+    background: #fff;
+}
+
+.small-muted {
+    font-size: 0.85rem;
+    color: #6c757d;
+}
