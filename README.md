@@ -11,7 +11,7 @@ Expense reimbursement system with multi-level approvals and smart rules.
 - OCR receipt scanning (optional)
 
 ## 🛠 Tech Stack
-- Backend: Python (Flask/FastAPI)
+- Backend: Python (FastAPI)
 - Frontend: React / HTML-CSS-JS
 - Database: PostgreSQL
 
