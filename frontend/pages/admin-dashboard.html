@@ -22,6 +22,7 @@
             </aside>
 
             <main class="content-area">
+<<<<<<< HEAD
                 <div class="dashboard-header">
                     <h2 class="fw-bold">Admin Dashboard</h2>
                     <p class="text-muted">
@@ -34,22 +35,48 @@
                         <div class="card stat-card p-3">
                             <h6>Employees</h6>
                             <h3>12</h3>
+=======
+                <div class="dashboard-header d-flex justify-content-between align-items-center flex-wrap gap-2">
+                    <div>
+                        <h2 class="fw-bold mb-1">Admin Dashboard</h2>
+                        <p class="text-muted">
+    Manage users, roles, and reporting managers
+</p>
+                    </div>
+                    <button class="btn btn-danger btn-sm" id="logoutBtn">Logout</button>
+                </div>
+
+                <div class="row g-3 mb-4 mt-2">
+                    <div class="col-md-4">
+                        <div class="card stat-card p-3">
+                            <h6>Employees</h6>
+                            <h3 id="employeeCount">0</h3>
+>>>>>>> 49869ab (protype with backend)
                         </div>
                     </div>
                     <div class="col-md-4">
                         <div class="card stat-card p-3">
                             <h6>Managers</h6>
+<<<<<<< HEAD
                             <h3>3</h3>
+=======
+                            <h3 id="managerCount">0</h3>
+>>>>>>> 49869ab (protype with backend)
                         </div>
                     </div>
                     <div class="col-md-4">
                         <div class="card stat-card p-3">
                             <h6>Pending Expenses</h6>
+<<<<<<< HEAD
                             <h3>6</h3>
+=======
+                            <h3 id="pendingExpenseCount">0</h3>
+>>>>>>> 49869ab (protype with backend)
                         </div>
                     </div>
                 </div>
 
+<<<<<<< HEAD
                 <div class="card section-card mb-4">
                     <div class="card-body">
                         <div
@@ -63,13 +90,107 @@
                                 Add Demo User
                             </button>
                         </div>
+=======
+                <!-- CREATE / MANAGE USER FORM -->
+                <div class="card section-card mb-4">
+                    <div class="card-body">
+                        <div class="d-flex justify-content-between align-items-center mb-3">
+                            <h5 class="fw-bold mb-0">Create Employee / Manager</h5>
+                        </div>
+
+                        <div id="adminMessage" class="mb-3"></div>
+
+                        <form id="userForm" class="row g-3">
+                            <input type="hidden" id="userId" />
+
+                            <div class="col-md-6">
+                                <label for="fullName" class="form-label">Full Name</label>
+                                <input
+                                    type="text"
+                                    class="form-control"
+                                    id="fullName"
+                                    placeholder="Enter full name"
+                                    required
+                                />
+                            </div>
+
+                            <div class="col-md-6">
+                                <label for="email" class="form-label">Email</label>
+                                <input
+                                    type="email"
+                                    class="form-control"
+                                    id="email"
+                                    placeholder="Enter email"
+                                    required
+                                />
+                            </div>
+
+                            <div class="col-md-4">
+                                <label for="password" class="form-label">Password</label>
+                                <input
+                                    type="text"
+                                    class="form-control"
+                                    id="password"
+                                    placeholder="Enter password"
+                                    required
+                                />
+                            </div>
+
+                            <div class="col-md-4">
+                                <label for="role" class="form-label">Role</label>
+                                <select class="form-select" id="role" required>
+                                    <option value="">Select role</option>
+                                    <option value="employee">Employee</option>
+                                    <option value="manager">Manager</option>
+                                </select>
+                            </div>
+
+                            <div class="col-md-4">
+                                <label for="managerId" class="form-label">Reporting Manager</label>
+                                <select class="form-select" id="managerId">
+                                    <option value="">No manager</option>
+                                </select>
+                                <small class="text-muted">
+                                    Only needed for employees
+                                </small>
+                            </div>
+
+                            <div class="col-12 d-flex gap-2">
+                                <button type="submit" class="btn btn-primary" id="saveUserBtn">
+                                    Save User
+                                </button>
+                                <button type="button" class="btn btn-secondary" id="resetUserBtn">
+                                    Reset
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+                <!-- USER LIST -->
+                <div class="card section-card">
+                    <div class="card-body">
+                        <div class="d-flex justify-content-between align-items-center mb-3">
+                            <h5 class="fw-bold mb-0">User Management</h5>
+                        </div>
+
+>>>>>>> 49869ab (protype with backend)
                         <div class="table-responsive">
                             <table class="table align-middle">
                                 <thead>
                                     <tr>
+<<<<<<< HEAD
                                         <th>Name</th>
                                         <th>Role</th>
                                         <th>Manager</th>
+=======
+                                        <th>ID</th>
+                                        <th>Name</th>
+                                        <th>Email</th>
+                                        <th>Role</th>
+                                        <th>Manager</th>
+                                        <th>Actions</th>
+>>>>>>> 49869ab (protype with backend)
                                     </tr>
                                 </thead>
                                 <tbody id="usersTableBody"></tbody>
@@ -77,6 +198,7 @@
                         </div>
                     </div>
                 </div>
+<<<<<<< HEAD
 
                 <div class="card section-card">
                     <div class="card-body">
@@ -96,10 +218,16 @@
                         <div id="workflowList"></div>
                     </div>
                 </div>
+=======
+>>>>>>> 49869ab (protype with backend)
             </main>
         </div>
 
         <script src="../js/global.js"></script>
         <script src="../js/admin.js"></script>
     </body>
+<<<<<<< HEAD
 </html>
+=======
+</html>
+>>>>>>> 49869ab (protype with backend)
